@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="main-section">
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" name="search-city" id="search-input" placeholder="Tìm kiếm thành phố...">
+        </div>
+        <div class="info-wrapper">
+            <p class="city-name">Ho Chi Minh</p>
+            <p class="weather-state">mây thưa</p>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+            <p class="temperature">26</p>
+        </div>
+    </div>
+    <div class="additional-section">
+        <div class="row">
+            <div class="item">
+                <div class="label">MT Mọc</div>
+                <div class="value sunrise">6:16</div>
+            </div>
+            <div class="item">
+                <div class="label">MT Lặn</div>
+                <div class="value sunset">17:57</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item">
+                <div class="label">Độ ẩm</div>
+                <div class="value">
+                    <span class="humidity">73</span> %
+                </div>
+            </div>
+            <div class="item">
+                <div class="label">Gió</div>
+                <div class="value">
+                    <span class="wind-speed">5.54</span> km/h
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+<script src="moment.js"></script>
+</body>
+</html>
